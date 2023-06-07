@@ -13,7 +13,7 @@
     <el-table-column property="address" label="Address" show-overflow-tooltip />
   </el-table>
   <div style="margin-top: 20px">
-    <el-button @click="toggleSelection([tableData[1], tableData[2]])"
+    <el-button @click="toggleSelection([2, 3])"
       >Toggle selection status of second and third rows</el-button
     >
     <el-button @click="toggleSelection()">Clear selection</el-button>
@@ -50,36 +50,42 @@ const handleSelectionChange = (val: User[]) => {
 
 const tableData: User[] = [
   {
+  id:1,
     date: '2016-05-03',
     name: 'Tom',
     address: 'No. 189, Grove St, Los Angeles',
   },
-  {
+  {id:2,
     date: '2016-05-02',
     name: 'Tom',
     address: 'No. 189, Grove St, Los Angeles',
   },
   {
+  id:3,
     date: '2016-05-04',
     name: 'Tom',
     address: 'No. 189, Grove St, Los Angeles',
   },
   {
+  id:4,
     date: '2016-05-01',
     name: 'Tom',
     address: 'No. 189, Grove St, Los Angeles',
   },
   {
+  id:5,
     date: '2016-05-08',
     name: 'Tom',
     address: 'No. 189, Grove St, Los Angeles',
   },
   {
+  id:6,
     date: '2016-05-06',
     name: 'Tom',
     address: 'No. 189, Grove St, Los Angeles',
   },
   {
+  id:7,
     date: '2016-05-07',
     name: 'Tom',
     address: 'No. 189, Grove St, Los Angeles',
